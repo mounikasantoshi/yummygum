@@ -1,8 +1,10 @@
 import React, { Component } from "react";
 import Address from "./Address";
-import LetsTalk from "./LetsTalk";
-import Videocall from "./Videocall";
+// import LetsTalk from "./LetsTalk";
+// import Videocall from "./Videocall";
 import Demo from "./Demo";
+// import Success from "./Success";
+// import ValidationSchemaExample from "./PlanVideoCall";
 
 export default class contact extends Component {
   state = {
@@ -32,6 +34,9 @@ export default class contact extends Component {
           onchange={this.onchange}
           close={this.close}
         />
+        {/* <PlanVideoCall /> */}
+        {/* <ValidationSchemaExample /> */}
+        {/* <Success close={this.close} /> */}
       </div>
     );
   }

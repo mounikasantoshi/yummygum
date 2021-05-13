@@ -10,7 +10,7 @@ export default class Address extends Component {
       <div
         className="leftcontent bg "
         // style={{ left: "-600px" }}
-        style={{ left: this.props.selected != "" ? "-500px" : "0px" }}
+        style={{ left: this.props.selected !== "" ? "-500px" : "0px" }}
       >
         {this.props.selected && (
           <button className="closebtn" onClick={this.props.close}>

@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import { useHistory } from "react-router-dom";
+// import { useHistory } from "react-router-dom";
 
 export default class LetsTalk extends Component {
   render() {
-    console.log(this.props.pathName);
+    // console.log(this.props.pathName);
     return (
       <div>
         <div className="right">
@@ -19,7 +19,7 @@ export default class LetsTalk extends Component {
               name="radio"
               value="yourgreatproject"
               id="yourgreatproject"
-              checked={this.props.pathName == "yourgreatproject"}
+              checked={this.props.pathName === "yourgreatproject"}
               onChange={this.props.onchange}
             />
             <label class="form-check-label" for="yourgreatproject">
@@ -32,7 +32,7 @@ export default class LetsTalk extends Component {
               type="radio"
               name="radio"
               value="meetingforcoffee"
-              checked={this.props.pathName == "meetingforcoffee"}
+              checked={this.props.pathName === "meetingforcoffee"}
               id="meetingforcoffee"
               onChange={this.props.onchange}
               // checked="true"
@@ -47,7 +47,7 @@ export default class LetsTalk extends Component {
               type="radio"
               name="radio"
               value="birdsandbees"
-              checked={this.props.pathName == "birdsandbees"}
+              checked={this.props.pathName === "birdsandbees"}
               id="birdsandbees"
               onChange={this.props.onchange}
             />
@@ -61,7 +61,7 @@ export default class LetsTalk extends Component {
               type="radio"
               value="planavideocall"
               name="radio"
-              checked={this.props.pathName == "planavideocall"}
+              checked={this.props.pathName === "planavideocall"}
               id="planavideocall"
               onChange={this.props.onchange}
               // checked

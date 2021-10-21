@@ -1,0 +1,198 @@
+.flex {
+  display: flex;
+}
+.leftcontent {
+  height: 100vh;
+  width: 50%;
+  position: absolute;
+  transition: 1s;
+  /* left: -550px; */
+  /* background-blend-mode: dark; */
+  /* background-position: bottom; */
+}
+.videocall {
+  height: 100vh;
+  width: 100%;
+}
+.bg {
+  right: 50%;
+  padding-top: 70px;
+  background-image: url("https://snazzy-maps-cdn.azureedge.net/assets/287702-the-x-spot-location-map.png?v=20191016015002");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.leftspace {
+  margin-left: 60px;
+}
+
+.leftheader {
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 80px;
+  font-weight: bold;
+  font-size: 76px;
+  margin-top: 80px;
+  /* margin-bottom: 16px; */
+  color: #3c424f;
+}
+.p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.h4 {
+  font-size: 28px;
+  font-weight: bold;
+  font-family: Medium, Helvetica, Arial, sans-serif;
+  color: #3c424f;
+  line-height: 32px;
+  /* margin-bottom: 12px; */
+}
+
+.link {
+  color: #686b77;
+  font-size: 19px;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* .social {
+  display: flex;
+} */
+.social {
+  margin-right: 16px;
+  color: #444;
+  font-size: 20px;
+}
+.twitter:hover {
+  color: #1da1f2;
+}
+.insta:hover {
+  color: #5851db;
+}
+.mail:hover {
+  color: #047a36;
+}
+
+.rightcontent {
+  background-color: #58c7ff;
+  height: 100vh;
+  /* width: 50%; */
+  color: beige;
+  position: absolute;
+  transition: 1s;
+}
+
+.rightheader {
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 80px;
+  font-size: 76px;
+  font-weight: bold;
+  margin-top: 100px;
+  margin-bottom: 16px;
+}
+.right {
+  margin: 60px;
+}
+.talkabout {
+  font-size: 28px;
+}
+.mailright {
+  text-decoration: underline;
+}
+/* .share {
+} */
+/* .bottom {
+  margin-bottom: 300px;
+} */
+
+.btn:hover {
+  color: #2eaff0;
+  background-color: #fff;
+  border-color: #fff;
+}
+.btn {
+  margin: 20px;
+  padding: 12px 32px;
+  font-size: 18px;
+  font-family: Medium, Helvetica, Arial, sans-serif !important;
+  line-height: 1 !important;
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid currentColor;
+  border-radius: 50px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.video {
+  background-color: #58c7ff;
+  height: 100vh;
+  color: beige;
+  font-family: Medium, Helvetica, Arial, sans-serif;
+}
+.personal {
+  font-size: 28px;
+  line-height: 32px;
+  margin-bottom: 12px;
+}
+.call {
+  font-family: Bold, Helvetica, Arial, sans-serif !important;
+  font-size: 76px;
+  line-height: 80px;
+  margin-bottom: 16px;
+  font-weight: 800;
+  padding-top: 30px;
+}
+.input {
+  background-color: rgba(38, 169, 234, 0.5);
+  border: none;
+  margin: 20px 0px;
+  padding: 12px 32px;
+  font-size: 18px;
+  font-family: Medium, Helvetica, Arial, sans-serif !important;
+  text-decoration: none;
+  width: 100%;
+  outline: none;
+}
+
+.grid {
+  display: flex;
+  flex-direction: row;
+}
+
+.gridLeft {
+  padding: 20px;
+}
+
+.textarea {
+  height: 200px;
+  width: 500px;
+  /* margin-left: 450px; */
+  /* margin-bottom: 300px; */
+}
+.icon {
+  margin-left: 30px;
+  color: black;
+  font-size: 70px;
+}
+
+.closebtn {
+  /* padding: 20px; */
+  border-radius: 50%;
+  font-size: 40px;
+  margin-left: 90%;
+  border: none;
+  background: transparent;
+  margin-top: 10px;
+}
+
+.ul {
+  text-decoration: none;
+}
+.success {
+  width: 100%;
+  text-align: center;
+}
+
+.required {
+  color: red;
+}

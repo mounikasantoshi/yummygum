@@ -8,9 +8,9 @@ export default class Videocall extends Component {
     email: "",
     topic: "",
     error: {
-      nameerror: "",
-      emailerror: "",
-      topicerror: "",
+      name: "",
+      email: "",
+      topic: "",
     },
     // errors: {
     //   name: "",
@@ -23,6 +23,7 @@ export default class Videocall extends Component {
     this.setState({
       //   data: { ...this.state.data,
       [e.target.name]: e.target.value,
+      error: { ...this.state.error, [e.target.name]: "" },
       // },
     });
   };
@@ -79,9 +80,9 @@ export default class Videocall extends Component {
     // e.preventDefault();
     this.setState({
       error: {
-        nameerror: this.state.name === "",
-        emailerror: this.state.email === "",
-        topicerror: this.state.topic === "",
+        name: this.state.name === "",
+        email: this.state.email === "",
+        topic: this.state.topic === "",
       },
     });
     return (
@@ -102,7 +103,7 @@ export default class Videocall extends Component {
         topic: "",
       });
       this.setState({
-        error: { nameerror: "", emailerror: "", topicerror: "" },
+        error: { name: "", email: "", topic: "" },
       });
     }
   };
@@ -131,7 +132,7 @@ export default class Videocall extends Component {
                   value={this.state.name}
                   onChange={this.onchange}
                 />
-                {this.state.error.nameerror ? (
+                {this.state.error.name == true ? (
                   <p className="required">required</p>
                 ) : null}
                 {/* <p className="error">
@@ -146,7 +147,7 @@ export default class Videocall extends Component {
                   name="email"
                   onChange={this.onchange}
                 />
-                {this.state.error.emailerror ? (
+                {this.state.error.email ? (
                   <p className="required">required</p>
                 ) : null}
 
@@ -163,7 +164,7 @@ export default class Videocall extends Component {
                   name="topic"
                   onChange={this.onchange}
                 />
-                {this.state.error.topicerror ? (
+                {this.state.error.topic ? (
                   <p className="required">required</p>
                 ) : null}
                 {/* <p className="error">
